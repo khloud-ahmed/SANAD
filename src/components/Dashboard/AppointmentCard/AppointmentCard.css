@@ -1,0 +1,95 @@
+.appointment-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.appointment-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+  flex: 1 1 220px;
+  min-width: 210px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.appointment-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.visit-type-icon {
+  color: #0d9488;
+  font-size: 14px;
+}
+
+.status-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.status-badge.status-green { background: #eafaf0; color: #16a34a; }
+.status-badge.status-yellow { background: #fef9e7; color: #b45309; }
+.status-badge.status-blue { background: #eff6ff; color: #2563eb; }
+.status-badge.status-red { background: #fef2f2; color: #dc2626; }
+.status-badge.status-gray { background: #f2f4f7; color: #667085; }
+
+.appointment-patient {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #101828;
+  margin: 0;
+}
+
+.appointment-datetime {
+  font-size: 12.5px;
+  color: #344054;
+  margin: 0;
+}
+
+.appointment-doctor {
+  font-size: 12px;
+  color: #667085;
+  margin: 0 0 6px;
+}
+
+.appointment-actions {
+  margin-top: auto;
+}
+
+.action-btn {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.action-btn-primary {
+  background: #0d9488;
+  color: #ffffff;
+}
+
+.action-btn-secondary {
+  background: #f2f4f7;
+  color: #101828;
+  border: 1px solid #e2e8f0;
+}
+
+@media (max-width: 640px) {
+  .appointment-card-list {
+    flex-direction: column;
+  }
+}

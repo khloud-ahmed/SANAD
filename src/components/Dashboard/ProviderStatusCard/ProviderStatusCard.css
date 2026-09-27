@@ -1,0 +1,98 @@
+.provider-status-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.provider-card {
+  display: flex;
+  gap: 12px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+  flex: 1 1 240px;
+  min-width: 220px;
+}
+
+.provider-avatar {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #0d9488;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.provider-card-body {
+  min-width: 0;
+}
+
+.provider-name-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.provider-name-row h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #101828;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.verified-badge {
+  color: #0d9488;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.provider-specialty {
+  font-size: 12.5px;
+  color: #667085;
+  margin: 2px 0 8px;
+}
+
+.provider-status-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  color: #344054;
+  margin-bottom: 4px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-dot.status-green { background-color: #16a34a; }
+.status-dot.status-yellow { background-color: #ca8a04; }
+.status-dot.status-gray { background-color: #98a2b3; }
+
+.provider-appointments {
+  font-size: 12px;
+  color: #98a2b3;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .provider-status-list {
+    flex-direction: column;
+  }
+  .provider-card {
+    flex: 1 1 auto;
+  }
+}
